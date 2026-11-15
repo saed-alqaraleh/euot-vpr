@@ -1,0 +1,4 @@
+-r requirements-cpu.txt
+# Head-equivalence CPU tests only; install CPU-only PyTorch via official index if needed
+torch>=2.1,<3
+Pillow>=10,<13

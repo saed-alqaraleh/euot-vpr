@@ -1,0 +1,2 @@
+# CPU statistics; pinned to tested major/minor family rather than claiming executed-run lock
+numpy>=2.1,<3

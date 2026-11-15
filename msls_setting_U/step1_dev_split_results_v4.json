@@ -1,0 +1,113 @@
+{
+  "seeds": [
+    42,
+    108,
+    2026
+  ],
+  "n_dev_pairs": 50,
+  "occlusion_protocol": "Structured 23x23 patch-grid occlusion comprising up to 5 rectangular regions and, where necessary, additional sampled patches to reach target mask fractions {0.0, 0.25, 0.50}.",
+  "note": "Single walking traversal (Gardens Point 150 train / 50 dev); in-sequence development sanity check only, not geographically independent validation.",
+  "metrics_r1": {
+    "official_pretrained_salad": {
+      "occ00": 28.0,
+      "occ25": 24.0,
+      "occ50": 24.0
+    },
+    "pca128_kmeans_control": {
+      "occ00": 34.0,
+      "occ25": 34.0,
+      "occ50": 20.0
+    },
+    "rgtmp_bal": {
+      "s42": {
+        "occ00": 24.0,
+        "occ25": 24.0,
+        "occ50": 16.0
+      },
+      "s108": {
+        "occ00": 24.0,
+        "occ25": 24.0,
+        "occ50": 16.0
+      },
+      "s2026": {
+        "occ00": 22.0,
+        "occ25": 24.0,
+        "occ50": 14.0
+      }
+    },
+    "rgtmp_bal_gate": {
+      "s42": {
+        "occ00": 26.0,
+        "occ25": 22.0,
+        "occ50": 12.0
+      },
+      "s108": {
+        "occ00": 28.0,
+        "occ25": 22.0,
+        "occ50": 12.0
+      },
+      "s2026": {
+        "occ00": 26.0,
+        "occ25": 22.0,
+        "occ50": 12.0
+      }
+    },
+    "euot_no_gate": {
+      "s42": {
+        "occ00": 22.0,
+        "occ25": 24.0,
+        "occ50": 16.0
+      },
+      "s108": {
+        "occ00": 22.0,
+        "occ25": 26.0,
+        "occ50": 14.0
+      },
+      "s2026": {
+        "occ00": 22.0,
+        "occ25": 24.0,
+        "occ50": 16.0
+      }
+    },
+    "euot_1stage": {
+      "s42": {
+        "occ00": 26.0,
+        "occ25": 24.0,
+        "occ50": 14.0
+      },
+      "s108": {
+        "occ00": 26.0,
+        "occ25": 24.0,
+        "occ50": 14.0
+      },
+      "s2026": {
+        "occ00": 26.0,
+        "occ25": 24.0,
+        "occ50": 14.0
+      }
+    }
+  },
+  "did_2x2_r1_occ50": {
+    "s42": {
+      "diff_pp": 2.0,
+      "ci95_lo_pp": 0.0,
+      "ci95_hi_pp": 6.0,
+      "mc_signflip_p": 1.0,
+      "n_queries": 50
+    },
+    "s108": {
+      "diff_pp": 4.0,
+      "ci95_lo_pp": 0.0,
+      "ci95_hi_pp": 10.0,
+      "mc_signflip_p": 0.4975,
+      "n_queries": 50
+    },
+    "s2026": {
+      "diff_pp": 0.0,
+      "ci95_lo_pp": -6.0,
+      "ci95_hi_pp": 6.0,
+      "mc_signflip_p": 1.0,
+      "n_queries": 50
+    }
+  }
+}

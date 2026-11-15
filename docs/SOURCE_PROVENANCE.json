@@ -1,0 +1,166 @@
+{
+  "sanitized_files": [
+    {
+      "file": "controlled_benchmark/euot_vpr_implementation.py",
+      "original_sha256": "779e1d8c874f94956f69b1925387bad84bbd97e1f78ea9eca39353a6915d1942",
+      "release_sha256": "af27e50733954c27b278f0830ba564398bede05bf9790dcf12c831f20b65cf58",
+      "scope": "Local storage/default path sanitization only; experimental functions unchanged"
+    },
+    {
+      "file": "msls_setting_S/EUOT_VPR_MSLS_v5_Retrain_RawTokens_1to64CLS.py",
+      "original_sha256": "6a0856e6fa934a88dab500911f32b143d815d8fd4a1d9b6fc22157df2bb0d61d",
+      "release_sha256": "0f4151d2ee026679563a847d515e25437c8d7254b56a37c6bd587809b746a837",
+      "scope": "Docstring only; numerical implementation unchanged"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/EUOT_VPR_MSLS_v5_Retrain_RawTokens_1to64CLS.py",
+      "original_sha256": "6a0856e6fa934a88dab500911f32b143d815d8fd4a1d9b6fc22157df2bb0d61d",
+      "release_sha256": "0f4151d2ee026679563a847d515e25437c8d7254b56a37c6bd587809b746a837",
+      "scope": "Docstring only; numerical implementation unchanged"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/euot_v6_kit.py",
+      "original_sha256": "238da7e8db2d08b9ac6662280265fb571e626c51d96e7ce62f9fc8b3e1e3ff18",
+      "release_sha256": "71318c961462cf5b654edd7f673d4a16fa95a13d562159bb6172c0deceb0c2f1",
+      "scope": "Runner comments, location defaults, and v5 docstring hash reference only; numerical operations unchanged"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/results/msls_val_query_groups.json",
+      "original_sha256": "98deada5da8011c360f13f1bc4ee62c6e49ce1902a70bed140025a25bc6d2784",
+      "release_sha256": "5fc25ac94eb32fc5d8ada6c86b6b0195dfea512044020cbd07d37103eca215fb",
+      "scope": "Remove absolute scratch location from metadata; grouping arrays unchanged"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/tests/test_kit_cpu.py",
+      "original_sha256": "d47d8a54b1fd6a3327ff2748f7ac11ac91f965a0945aac8ada8ff6a16c26b83b",
+      "release_sha256": "d942e1a4aaf638682b640a8391d9b85c4c0f6eb6d5a9bb0c95aec4ce61a36a55",
+      "scope": "Correct portable archive-root default; tests unchanged"
+    },
+    {
+      "file": "msls_setting_U/EUOT_VPR_MSLS_Matched_Backbone_Final_Diagnostic.py",
+      "original_sha256": "f0e34e4ddef593abcce71ab45542dd787bb1689540ab8435c80f53cfa2fe93ed",
+      "release_sha256": "e968dff38d6203f58889aa21eb7a287911fda313bc3c9cc0477efad4bc7c057f",
+      "scope": "CLI/local dataset path defaults only; inference/training functions unchanged"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/EUOT_VPR_MSLS_Matched_Backbone_Final_Diagnostic.py",
+      "original_sha256": "f0e34e4ddef593abcce71ab45542dd787bb1689540ab8435c80f53cfa2fe93ed",
+      "release_sha256": "e968dff38d6203f58889aa21eb7a287911fda313bc3c9cc0477efad4bc7c057f",
+      "scope": "CLI/local dataset path defaults only; inference/training functions unchanged"
+    },
+    {
+      "file": "msls_setting_S/EUOT_VPR_MSLS_v5_Retrain_RawTokens_1to64CLS.py",
+      "original_sha256": "0f4151d2ee026679563a847d515e25437c8d7254b56a37c6bd587809b746a837",
+      "release_sha256": "23a1edc8754f132794ba18d165e2fc5b3bbbfb43b4a50054fc68906102eec47e",
+      "scope": "Preflight hash for v4 portable CLI-default sanitization; no numerical changes"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/EUOT_VPR_MSLS_v5_Retrain_RawTokens_1to64CLS.py",
+      "original_sha256": "0f4151d2ee026679563a847d515e25437c8d7254b56a37c6bd587809b746a837",
+      "release_sha256": "23a1edc8754f132794ba18d165e2fc5b3bbbfb43b4a50054fc68906102eec47e",
+      "scope": "Preflight hash for v4 portable CLI-default sanitization; no numerical changes"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/euot_v6_kit.py",
+      "original_sha256": "71318c961462cf5b654edd7f673d4a16fa95a13d562159bb6172c0deceb0c2f1",
+      "release_sha256": "06c8a7ad78430af837e27fa89a252ba4aa5cd069ce68c00c6478e28d5dc0c52d",
+      "scope": "Updated portable source-digest references; no numerical changes"
+    },
+    {
+      "file": "msls_setting_S/EUOT_VPR_MSLS_v5_Retrain_RawTokens_1to64CLS.py",
+      "original_sha256": "23a1edc8754f132794ba18d165e2fc5b3bbbfb43b4a50054fc68906102eec47e",
+      "release_sha256": "21317fc255156d872526cee0e8b7c58f4d55247bdf3aa54906b8d8e31a477b92",
+      "scope": "Storage defaults only; numeric code unchanged"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/EUOT_VPR_MSLS_v5_Retrain_RawTokens_1to64CLS.py",
+      "original_sha256": "23a1edc8754f132794ba18d165e2fc5b3bbbfb43b4a50054fc68906102eec47e",
+      "release_sha256": "21317fc255156d872526cee0e8b7c58f4d55247bdf3aa54906b8d8e31a477b92",
+      "scope": "Storage defaults only; numeric code unchanged"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/euot_v6_kit.py",
+      "original_sha256": "06c8a7ad78430af837e27fa89a252ba4aa5cd069ce68c00c6478e28d5dc0c52d",
+      "release_sha256": "74b0e6ab728ae52ba361b7721867cdcdbf72f793b8b1a3b04c99cda75be1cc35",
+      "scope": "Updated expected v5 hash after CLI storage-default sanitization"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/tests/test_kit_cpu.py",
+      "scope": "Update the two stored-source fingerprint prefix assertions to match path-sanitized runner sources; science tests unchanged",
+      "release_sha256": "96d3efb3699b6499ee1f513247efb3b80aa8abd07c254b3b0a2c68a85ba709c9"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/euot_v6_analysis.py",
+      "original_sha256": "460da810b7012d0145a56fb716eb8011d01907690d5526046e49379a3b5b8243",
+      "release_sha256": "116a018e5e9828ead10c1ef37936c7c4d1ce3d2cb8059c1f3abdc38516f92cca",
+      "scope": "Editorial label/comment sanitization only, no scientific calculation changes"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/euot_v6_heads.py",
+      "original_sha256": "7f58f056ebb05bd485a60c7853ffe605b05b4e14e28bcd81f2b2bff2e8c53b41",
+      "release_sha256": "f601a246466b422e515b2917dc3bc5058b07972e76448127bed0083a194d6389",
+      "scope": "Editorial label/comment sanitization only, no scientific calculation changes"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/euot_v6_kit.py",
+      "original_sha256": "74b0e6ab728ae52ba361b7721867cdcdbf72f793b8b1a3b04c99cda75be1cc35",
+      "release_sha256": "a9b53d5dc86d9d7bc4e2537ae3ed729e84c79ff405544ef5918fc701e58e77b2",
+      "scope": "Editorial label/comment sanitization only, no scientific calculation changes"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/tests/test_kit_cpu.py",
+      "original_sha256": "96d3efb3699b6499ee1f513247efb3b80aa8abd07c254b3b0a2c68a85ba709c9",
+      "release_sha256": "3877dfa787ce1325568fcafdc328e554eb67119f5b2dcf9213d270ab281e4306",
+      "scope": "Editorial label/comment sanitization only, no scientific calculation changes"
+    },
+    {
+      "file": "msls_setting_S/EUOT_VPR_MSLS_v5_Retrain_RawTokens_1to64CLS.py",
+      "original_sha256": "21317fc255156d872526cee0e8b7c58f4d55247bdf3aa54906b8d8e31a477b92",
+      "release_sha256": "3aedd544ac2cdb2f75c858e990eaf7f8053c106faf5b2a3f5807e618c10ea697",
+      "scope": "Editorial label/comment sanitization only, no scientific calculation changes"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/EUOT_VPR_MSLS_v5_Retrain_RawTokens_1to64CLS.py",
+      "original_sha256": "21317fc255156d872526cee0e8b7c58f4d55247bdf3aa54906b8d8e31a477b92",
+      "release_sha256": "3aedd544ac2cdb2f75c858e990eaf7f8053c106faf5b2a3f5807e618c10ea697",
+      "scope": "Editorial label/comment sanitization only, no scientific calculation changes"
+    },
+    {
+      "file": "controlled_benchmark/scheduling_ablation/scheduling_ablation.py",
+      "original_sha256": "d9d124e11ceaf45ef597cef1c7e5cd0ef550209d11be92e4147a4c25fe779fe1",
+      "release_sha256": "7e74d70b1dd8347ce20564523dd33a7c2ca21a66c0908197c333320811f31e97",
+      "scope": "Editorial label/comment sanitization only, no scientific calculation changes"
+    },
+    {
+      "file": "controlled_benchmark/euot_vpr_implementation.py",
+      "original_sha256": "af27e50733954c27b278f0830ba564398bede05bf9790dcf12c831f20b65cf58",
+      "release_sha256": "86a0234ef8c9833b016be9d21ba9f8bd74aad5b09b19bd7f023329e8e879c165",
+      "scope": "Editorial label/comment sanitization only, no scientific calculation changes"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/euot_v6_kit.py",
+      "original_sha256": "a9b53d5dc86d9d7bc4e2537ae3ed729e84c79ff405544ef5918fc701e58e77b2",
+      "release_sha256": "204d232b7e341f534e65b43accaa99592ab439f212c39f18e07b2c48fff6f5c2",
+      "scope": "Update preflight digest for sanitized v5 description"
+    },
+    {
+      "file": "msls_crossed_and_gates_v6/kit/tests/test_kit_cpu.py",
+      "original_sha256": "3877dfa787ce1325568fcafdc328e554eb67119f5b2dcf9213d270ab281e4306",
+      "release_sha256": "4bc7be30a02bf5abbec650182a09718942d01ba5e4ae5bf659745c09333fda79",
+      "scope": "Update portable v5 source hash assertion"
+    }
+  ],
+  "excluded_categories": [
+    "manuscript",
+    "notebooks",
+    "internal logs",
+    "stage markers",
+    "private path/IDs",
+    "editorial notes and review-kit README",
+    "third-party image bank",
+    "upstream model weights",
+    "credentials",
+    "third-party raw datasets"
+  ],
+  "original_v4_runner_sha256": "f0e34e4ddef593abcce71ab45542dd787bb1689540ab8435c80f53cfa2fe93ed"
+}

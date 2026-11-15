@@ -1,0 +1,391 @@
+{
+  "analysis_date": "2026-10-31",
+  "schema": "euot_msls_matched_salad_v4_controlled_factorial",
+  "runner_script": "EUOT_VPR_MSLS_Matched_Backbone_Final_Diagnostic.py",
+  "runner_sha256": "f0e34e4ddef593abcce71ab45542dd787bb1689540ab8435c80f53cfa2fe93ed",
+  "dataset": {
+    "name": "MSLS-val (real-image development and corroboration benchmark across v1-v4.1 refinements)",
+    "n_gallery": 18871,
+    "n_queries": 740,
+    "target_mask_fractions": [
+      "occ00 (0%)",
+      "occ25 (25%)",
+      "occ50 (50%)"
+    ],
+    "occlusion_protocol": "Structured 23x23 patch-grid occlusion comprising up to 5 rectangular regions and, where necessary, additional sampled patches to reach target mask quota round(occ * 529)."
+  },
+  "training": {
+    "dataset": "Gardens Point Walking (first 150 day_left/night_right pairs; pairs 150..199 held out as in-sequence dev sanity check)",
+    "n_train_pairs": 150,
+    "n_dev_pairs": 50,
+    "epochs": 12
+  },
+  "seeds": [
+    42,
+    108,
+    2026
+  ],
+  "per_seed_metrics": {
+    "official_pretrained_salad": {
+      "occ00": {
+        "R@1": 92.3,
+        "R@5": 96.49,
+        "R@10": 97.03
+      },
+      "occ25": {
+        "R@1": 87.16,
+        "R@5": 94.05,
+        "R@10": 95.27
+      },
+      "occ50": {
+        "R@1": 71.76,
+        "R@5": 84.19,
+        "R@10": 87.84
+      }
+    },
+    "pca128_kmeans_control": {
+      "occ00": {
+        "R@1": 80.14,
+        "R@5": 88.24,
+        "R@10": 90.27
+      },
+      "occ25": {
+        "R@1": 64.73,
+        "R@5": 76.49,
+        "R@10": 81.22
+      },
+      "occ50": {
+        "R@1": 34.32,
+        "R@5": 47.3,
+        "R@10": 53.11
+      }
+    },
+    "rgtmp_bal_s42": {
+      "occ00": {
+        "R@1": 86.49,
+        "R@5": 94.59,
+        "R@10": 95.95
+      },
+      "occ25": {
+        "R@1": 72.43,
+        "R@5": 84.32,
+        "R@10": 87.7
+      },
+      "occ50": {
+        "R@1": 45.27,
+        "R@5": 59.19,
+        "R@10": 64.86
+      }
+    },
+    "rgtmp_bal_gate_s42": {
+      "occ00": {
+        "R@1": 86.89,
+        "R@5": 94.73,
+        "R@10": 96.08
+      },
+      "occ25": {
+        "R@1": 73.78,
+        "R@5": 85.0,
+        "R@10": 88.11
+      },
+      "occ50": {
+        "R@1": 46.35,
+        "R@5": 60.41,
+        "R@10": 67.43
+      }
+    },
+    "euot_no_gate_s42": {
+      "occ00": {
+        "R@1": 86.22,
+        "R@5": 94.59,
+        "R@10": 95.41
+      },
+      "occ25": {
+        "R@1": 72.43,
+        "R@5": 84.59,
+        "R@10": 87.57
+      },
+      "occ50": {
+        "R@1": 45.54,
+        "R@5": 59.73,
+        "R@10": 65.68
+      }
+    },
+    "euot_1stage_s42": {
+      "occ00": {
+        "R@1": 86.89,
+        "R@5": 95.0,
+        "R@10": 95.81
+      },
+      "occ25": {
+        "R@1": 74.73,
+        "R@5": 86.08,
+        "R@10": 89.32
+      },
+      "occ50": {
+        "R@1": 49.59,
+        "R@5": 64.19,
+        "R@10": 70.0
+      }
+    },
+    "rgtmp_bal_s108": {
+      "occ00": {
+        "R@1": 86.49,
+        "R@5": 94.59,
+        "R@10": 95.95
+      },
+      "occ25": {
+        "R@1": 72.43,
+        "R@5": 84.32,
+        "R@10": 87.7
+      },
+      "occ50": {
+        "R@1": 45.14,
+        "R@5": 59.32,
+        "R@10": 65.14
+      }
+    },
+    "rgtmp_bal_gate_s108": {
+      "occ00": {
+        "R@1": 86.76,
+        "R@5": 94.73,
+        "R@10": 96.08
+      },
+      "occ25": {
+        "R@1": 73.65,
+        "R@5": 85.27,
+        "R@10": 88.11
+      },
+      "occ50": {
+        "R@1": 46.49,
+        "R@5": 60.54,
+        "R@10": 67.43
+      }
+    },
+    "euot_no_gate_s108": {
+      "occ00": {
+        "R@1": 86.22,
+        "R@5": 94.59,
+        "R@10": 95.41
+      },
+      "occ25": {
+        "R@1": 72.3,
+        "R@5": 84.73,
+        "R@10": 87.57
+      },
+      "occ50": {
+        "R@1": 45.41,
+        "R@5": 59.86,
+        "R@10": 65.68
+      }
+    },
+    "euot_1stage_s108": {
+      "occ00": {
+        "R@1": 86.89,
+        "R@5": 95.0,
+        "R@10": 95.81
+      },
+      "occ25": {
+        "R@1": 74.59,
+        "R@5": 85.81,
+        "R@10": 89.46
+      },
+      "occ50": {
+        "R@1": 50.0,
+        "R@5": 64.05,
+        "R@10": 70.0
+      }
+    },
+    "rgtmp_bal_s2026": {
+      "occ00": {
+        "R@1": 86.35,
+        "R@5": 94.59,
+        "R@10": 95.81
+      },
+      "occ25": {
+        "R@1": 72.57,
+        "R@5": 84.32,
+        "R@10": 87.7
+      },
+      "occ50": {
+        "R@1": 44.86,
+        "R@5": 58.78,
+        "R@10": 65.0
+      }
+    },
+    "rgtmp_bal_gate_s2026": {
+      "occ00": {
+        "R@1": 86.89,
+        "R@5": 94.73,
+        "R@10": 96.08
+      },
+      "occ25": {
+        "R@1": 73.24,
+        "R@5": 84.86,
+        "R@10": 88.11
+      },
+      "occ50": {
+        "R@1": 46.35,
+        "R@5": 60.95,
+        "R@10": 67.57
+      }
+    },
+    "euot_no_gate_s2026": {
+      "occ00": {
+        "R@1": 86.22,
+        "R@5": 94.59,
+        "R@10": 95.41
+      },
+      "occ25": {
+        "R@1": 72.3,
+        "R@5": 84.59,
+        "R@10": 87.57
+      },
+      "occ50": {
+        "R@1": 45.54,
+        "R@5": 59.73,
+        "R@10": 65.68
+      }
+    },
+    "euot_1stage_s2026": {
+      "occ00": {
+        "R@1": 86.89,
+        "R@5": 95.0,
+        "R@10": 95.68
+      },
+      "occ25": {
+        "R@1": 74.73,
+        "R@5": 86.08,
+        "R@10": 89.19
+      },
+      "occ50": {
+        "R@1": 49.59,
+        "R@5": 64.19,
+        "R@10": 69.73
+      }
+    }
+  },
+  "three_seed_mean_metrics": {
+    "rgtmp_bal": {
+      "occ00": {
+        "R@1_mean": 86.44,
+        "R@1_std": 0.08,
+        "R@5": 94.59,
+        "R@10": 95.9
+      },
+      "occ25": {
+        "R@1_mean": 72.48,
+        "R@1_std": 0.08,
+        "R@5": 84.32,
+        "R@10": 87.7
+      },
+      "occ50": {
+        "R@1_mean": 45.09,
+        "R@1_std": 0.21,
+        "R@5": 59.1,
+        "R@10": 65.0
+      }
+    },
+    "rgtmp_bal_gate": {
+      "occ00": {
+        "R@1_mean": 86.85,
+        "R@1_std": 0.08,
+        "R@5": 94.73,
+        "R@10": 96.08
+      },
+      "occ25": {
+        "R@1_mean": 73.56,
+        "R@1_std": 0.28,
+        "R@5": 85.04,
+        "R@10": 88.11
+      },
+      "occ50": {
+        "R@1_mean": 46.4,
+        "R@1_std": 0.08,
+        "R@5": 60.63,
+        "R@10": 67.48
+      }
+    },
+    "euot_no_gate": {
+      "occ00": {
+        "R@1_mean": 86.22,
+        "R@1_std": 0.0,
+        "R@5": 94.59,
+        "R@10": 95.41
+      },
+      "occ25": {
+        "R@1_mean": 72.34,
+        "R@1_std": 0.08,
+        "R@5": 84.64,
+        "R@10": 87.57
+      },
+      "occ50": {
+        "R@1_mean": 45.5,
+        "R@1_std": 0.08,
+        "R@5": 59.77,
+        "R@10": 65.68
+      }
+    },
+    "euot_1stage": {
+      "occ00": {
+        "R@1_mean": 86.89,
+        "R@1_std": 0.0,
+        "R@5": 95.0,
+        "R@10": 95.77
+      },
+      "occ25": {
+        "R@1_mean": 74.68,
+        "R@1_std": 0.08,
+        "R@5": 85.99,
+        "R@10": 89.32
+      },
+      "occ50": {
+        "R@1_mean": 49.73,
+        "R@1_std": 0.24,
+        "R@5": 64.14,
+        "R@10": 69.91
+      }
+    }
+  },
+  "matched_2x2_did_pp": {
+    "occ00": {
+      "r1_did_pp": 0.27,
+      "r5_did_pp": 0.27,
+      "r10_did_pp": 0.18
+    },
+    "occ25": {
+      "r1_did_pp": 1.26,
+      "r5_did_pp": 0.63,
+      "r10_did_pp": 1.34
+    },
+    "occ50": {
+      "r1_did_pp": 2.93,
+      "per_seed_r1_did_pp": {
+        "s42": 2.97,
+        "s108": 3.24,
+        "s2026": 2.57
+      },
+      "shared_query_ci95_pp": [
+        1.08,
+        4.82
+      ],
+      "mc_signflip_p": 0.0028,
+      "r5_did_pp": 2.84,
+      "r10_did_pp": 1.75
+    }
+  },
+  "array_sha256_occ50": {
+    "msls_rgtmp_bal_s42_occ50_hits.npy": "3abd5e6f456dda53fd4191d3692607477431cbaadc099445e6179062443f05b7",
+    "msls_rgtmp_bal_gate_s42_occ50_hits.npy": "b90a2f02a05ab791e0701da0fbe0dfc1e11a1f778da4d93df0b619cb94d941ee",
+    "msls_euot_no_gate_s42_occ50_hits.npy": "8316557d1e3813f19c205a8280a96d8ff11650000a5540c64c6b1417da93a920",
+    "msls_euot_1stage_s42_occ50_hits.npy": "36dbfa93d90b7aa87852b33190b5ed549f1a0aa6f7c1c7a074883bbaf391da49",
+    "msls_rgtmp_bal_s108_occ50_hits.npy": "9895c834d3d73813eb3187eddfccb8107d082bdd4f689307934b2ad4a54ec8e1",
+    "msls_rgtmp_bal_gate_s108_occ50_hits.npy": "6f158683c97558c20ec69669613644d442bef5dfa0fb82a87eb8755465a57d1c",
+    "msls_euot_no_gate_s108_occ50_hits.npy": "70e34e829a8ca6a7e6e5b0c02269c275e673bae8fa83b5e355bfb039c6c75724",
+    "msls_euot_1stage_s108_occ50_hits.npy": "d00baacc4576f8b984a0fc2000ed40e8f2b37c8d1ef51016d9bf56e70c3f79ef",
+    "msls_rgtmp_bal_s2026_occ50_hits.npy": "723374369caf655bfde577caaa6d8a0d8def2ac93990d63cbc5cc0966e3832c8",
+    "msls_rgtmp_bal_gate_s2026_occ50_hits.npy": "c079c76ac56321f4c5f51c2c18d1caa740a2cc3eee9b18848f002289a5ad6bd9",
+    "msls_euot_no_gate_s2026_occ50_hits.npy": "dc7bb8c8cf0284e2bb764fc476329e81dd732833e39c2bf3ce5c04b7187a49fa",
+    "msls_euot_1stage_s2026_occ50_hits.npy": "c04cc2a67c95156b4d7d67fc93095bebadf779817171c3cbd5523db94f89ffd6"
+  }
+}

@@ -1,0 +1,19 @@
+# Sensitive and external inputs never belong in the repository
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.ipynb
+.env
+.env.*
+*.key
+*.pem
+*.token
+*.log
+outputs/
+private/
+local_data/
+msls_manifest.json
+*.tar
+*.zip
+.DS_Store

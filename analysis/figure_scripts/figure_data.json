@@ -1,0 +1,77 @@
+{
+  "source_file": "supplementary/analysis/v6_statistics_recomputed.json",
+  "source_sha256": "62a65395994ac2dad2690e698c8285033d99e2089d3e67bbd193f3ece0683a87",
+  "protocol": {
+    "unit": "query identity; per-query hits averaged over seeds 42/108/2026",
+    "bootstrap_draws": 2000,
+    "sign_flips": 10000,
+    "rng": "numpy default_rng(42)",
+    "sidedness": "two-sided"
+  },
+  "setting_order": [
+    "U",
+    "RE",
+    "UW",
+    "S"
+  ],
+  "interaction_at_50_percent_masking": {
+    "U": {
+      "diff_pp": 2.93,
+      "ci95": [
+        1.17,
+        4.82
+      ],
+      "p": 0.0027,
+      "n_units": 740
+    },
+    "RE": {
+      "diff_pp": 2.34,
+      "ci95": [
+        0.54,
+        4.28
+      ],
+      "p": 0.0176,
+      "n_units": 740
+    },
+    "UW": {
+      "diff_pp": -1.22,
+      "ci95": [
+        -3.74,
+        1.35
+      ],
+      "p": 0.3736,
+      "n_units": 740
+    },
+    "S": {
+      "diff_pp": -3.42,
+      "ci95": [
+        -5.86,
+        -0.99
+      ],
+      "p": 0.0058,
+      "n_units": 740
+    }
+  },
+  "setting_map": {
+    "U": {
+      "tokens": "unit",
+      "global_share": "1/2",
+      "alpha": "1"
+    },
+    "RE": {
+      "tokens": "raw",
+      "global_share": "1/2",
+      "alpha": "1"
+    },
+    "UW": {
+      "tokens": "unit",
+      "global_share": "1/65",
+      "alpha": "1/8"
+    },
+    "S": {
+      "tokens": "raw",
+      "global_share": "1/65",
+      "alpha": "1/8"
+    }
+  }
+}
