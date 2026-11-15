@@ -30,6 +30,6 @@ The release excludes manuscript, private local and cloud paths, notebook source/
 1. Original EUOT-VPR code is under the MIT license. The license does not apply to unrelated upstream software, images, model weights, or any third-party benchmark content; publication must respect the independent applicable terms.
 2. Rights and attribution for all five images in the original controlled-benchmark bank are not fully documented. The image bank is deliberately withheld, so an exact raw-image rerun of that control study is not self-contained.
 3. Exact MSLS-val ordered gallery/query manifest and positives, authorized MSLS and Gardens Point images, historical pretrained SALAD backbone/checkpoint and a complete GPU environment lock are not present. Full image-level reproducibility has not been demonstrated.
-4. Remote GitHub upload and post-push verification must be performed separately. Do not assume a clean local archive proves that every file has arrived on the remote.
+4. The private GitHub `main` branch was independently inspected at commit `534df53b810d5e6b9c850e0ad20446678b1e8b26`. Its initial CI run passed, and zero workflow artifacts were present. Changes to release documentation require a new commit and fresh CI confirmation. Do not interpret private CI success as public access or as rights clearance.
 
 See `IMAGE_LEVEL_REPLAY.md` and `THIRD_PARTY_RIGHTS.md` for required external inputs and permission scope.

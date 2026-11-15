@@ -72,21 +72,13 @@ docs/                         Data/replay, rights, numerical provenance, release
 SHA256SUMS.txt                Full release hash inventory (excluding itself)
 ```
 
-## Offline Git bundle import
+## Citing a fixed research version
 
-For offline distribution, the accompanying Git bundle contains a complete `main` branch. To inspect the release tree:
-
-```bash
-git clone -b main EUOT-VPR_public_candidate.git.bundle euot-vpr
-cd euot-vpr
-python scripts/verify_release.py
-```
-
-For a GitHub release, push to a **private** repository first and review the complete remote tree before changing visibility. Third-party source images and original upstream model weights are not included; see the rights and reproduction documentation for the remaining independent inputs.
+The repository is accompanied by `CITATION.cff`. For a reproducible citation, cite a released tag or the exact Git commit rather than the mutable `main` branch. The CPU workflow independently verifies the archived MSLS-val results; it does **not** constitute fresh inference on the original photographs. Public availability and independently licensed assets are described under [third-party rights](docs/THIRD_PARTY_RIGHTS.md).
 
 ## Source and release scope
 
-The included checkpoints and per-query arrays are archived study evidence; the source images, upstream SALAD model/code, training image cache, notebook metadata, internal console logs, staging markers, manuscripts and editorial material are not included. Specific source-code **storage defaults and comments** were sanitized; the full list of original and released SHA-256s is `docs/SOURCE_PROVENANCE.json`. No experimental results were changed, and the complete v4/v5/v6 hit matrices retain their original checksums. `msls_val_query_groups.json` differs only in the two source-file metadata path strings; the numeric grouping is unchanged.
+The included study-fitted checkpoints and per-query arrays are archived study evidence, subject to the asset-by-asset rights assessment; the source images, upstream SALAD model/code, training image cache, notebook metadata, internal console logs, staging markers, manuscripts and editorial material are not included. Specific source-code **storage defaults and comments** were sanitized; the full list of original and released SHA-256s is `docs/SOURCE_PROVENANCE.json`. No experimental results were changed, and the complete v4/v5/v6 hit matrices retain their original checksums. `msls_val_query_groups.json` differs only in the two source-file metadata path strings; the numeric grouping is unchanged.
 
 **Known limits:** The exact ordered `msls_manifest.json`, original authorized MSLS and Gardens Point images, and SALAD pretrained trunk are needed for image-level replay. The bundled image bank is withheld pending exact redistribution clearance; the controlled raw-image simulator therefore cannot rerun from the package alone. The archived numerical analysis is independently reproducible on CPU; exact image-level recreation requires the separately licensed inputs documented below. See `docs/THIRD_PARTY_RIGHTS.md` and `docs/IMAGE_LEVEL_REPLAY.md`.
 

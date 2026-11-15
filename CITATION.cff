@@ -1,8 +1,10 @@
 cff-version: 1.2.0
-message: "Please cite the associated article when its final bibliographic details are available."
+message: "Please cite this research software and its associated article when final publication details are available."
 title: "Descriptor Weighting Shapes the Effect of Unbalanced Transport in Occluded Visual Place Recognition"
 type: software
 authors:
   - family-names: Alqaraleh
     given-names: Saed
 year: 2026
+repository-code: "https://github.com/saed-alqaraleh/euot-vpr"
+abstract: "Original research code and archived numerical evidence for descriptor weighting, transport relaxation and gated aggregation in occluded visual place recognition."
